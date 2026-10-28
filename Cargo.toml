@@ -5,6 +5,9 @@ edition = "2021"
 description = "Real-time DeepFilterNet enhancement using ONNX Runtime"
 links = "deepfilter_rt"
 
+[lib]
+crate-type = ["cdylib", "rlib"]
+
 [dependencies]
 # DF crate for STFT/ISTFT and signal processing
 deep_filter = { git = "https://github.com/Rikorose/DeepFilterNet", package = "deep_filter" }
